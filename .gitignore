@@ -1,0 +1,24 @@
+# Ignorar archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs
+logs
+*.log
+
+# Ignorar archivos de compilación y dependencias (si aplican)
+node_modules/
+dist/
+build/
+
+# Ignorar archivos de configuración del entorno
+.env
+.env.local
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates

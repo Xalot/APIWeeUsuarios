@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Enlazar el archivo CSS -->
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <!-- Columna de la imagen -->
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="image-box">
+                    <img src="images/logo.png" alt="Logo" class="img-fluid">
+                </div>
+            </div>
+            <!-- Columna del formulario -->
+            <div class="col-lg-6">
+                <div class="padding">
+                    <br>
+                    <h1 class="text-center mb-4">Registro de Usuario</h1>
+                    <div id="content">
+                        <form id="registroForm">
+                            <!-- Campos del formulario (igual que antes) -->
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" name="NombreEmpresa" id="NombreEmpresa" required placeholder="Ingresa el nombre de la empresa">
+                            </div>
+                            <br>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" name="NombreContacto" id="NombreContacto" required placeholder="Ingresa tu nombre">
+                            </div>
+                            <br>
+                            <div class="form-group">
+
+                                <input type="email" class="form-control" name="CorreoElectronico" id="CorreoElectronico" required placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <br>
+                            <div class="form-group">
+
+                                <input type="text" class="form-control" name="Telefono" id="Telefono" required placeholder="Ingresa tu número de teléfono">
+                            </div>
+                            <br>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="terminosCheck" required>
+                                <label class="form-check-label" for="terminosCheck">
+                                    He leído y acepto el <a href="terminos.html" target="_blank">Aviso de privacidad / Términos y condiciones</a>
+                                </label>
+                            </div>
+                            <button type="submit" id="registroBtn" class="btn btn-primary btn-lg" disabled>Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir jQuery , Bootstrap JS y SweetAlert2  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Enlazar el archivo JS -->
+    <script src="js/registro.js"></script>
+</body>
+</html>

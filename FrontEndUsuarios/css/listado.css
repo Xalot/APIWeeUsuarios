@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4285714286;
+    color: #212529;
+    text-align: left;
+    background-color: #f9f9fa;
+}
+
+#page-content {
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Questrial', Verdana, sans-serif;
+    color: #5e676f;
+}
+
+.image-box {
+    background-color: #F0F2FA;
+    width: 100%;
+    height: 100vh; /* Altura de la ventana */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 50px 50px 0; /* Puntas curvadas en PC */
+}
+
+.image-box img {
+    max-width: 80%;
+    height: auto;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.list {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: .75rem .625rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-item > div {
+    padding-left: .625rem;
+    padding-right: .625rem;
+}
+
+.flex {
+    flex: 1;
+}
+
+.item-author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5e676f;
+}
+
+.item-except {
+    margin-top: 4px;
+}
+
+.text-muted {
+    color: #99a0ac !important;
+}
+
+/* Estilos para el botón "Registrar" */
+.text-center .btn-primary {
+    padding: 15px 30px;
+    font-size: 1.25rem;
+}
+
+/* Responsividad */
+@media (max-width: 991.98px) {
+    .image-box {
+        height: auto;
+        padding: 40px 20px;
+        border-radius: 0; /* Sin curvas en móvil */
+    }
+
+    .row.no-gutters {
+        flex-direction: column;
+    }
+
+    .image-box img {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-center .btn-primary {
+        width: 100%;
+    }
+}
